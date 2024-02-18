@@ -15,7 +15,7 @@ class Asiento:
 class Motor:
     def __init__(self, cilindros, tipo, registro):
         self.cilindros = cilindros
-        self.tipos_permitidos = ["electrico", "gasolina"]
+        self.tipos_permitidos = ["electrico", "gasolina", "normal"]  # Agrega "normal" aquí
         if tipo in self.tipos_permitidos:
             self.tipo = tipo
         else:
